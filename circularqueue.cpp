@@ -112,4 +112,19 @@ int main()
 
     while (true)
     {
-       
+       try
+        {
+            cout << "Menu\n";
+            cout << "1. Implement insert operation\n";
+            cout << "2. Implement remove operation\n";
+            cout << "3. Display values\n";
+            cout << "4. Exit\n";
+            cout << "Enter your choice (1-4): ";
+            cin >> ch;
+            cout << endl;
+
+           
+
+        
+            
+ 
