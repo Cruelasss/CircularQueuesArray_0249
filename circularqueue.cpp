@@ -2,8 +2,11 @@
 using namespace std;
 
 class Queues {
-    int FRONT, REAR, max = 5;
-    int queue_array[5];
+    private : 
+    static const int max = 3;
+    int FRONT, REAR;
+    int queue_array[max];
+    
 
 public:
     Queues() {
@@ -88,7 +91,7 @@ void display()
         }
         else
         {
-            //jika front > rear, iterasi dari front hingga akhir array
+            //jika front > REAR , iterasi dari FRONT hingga akhir array
             while (FRONT_Position <= max - 1)
             {
                 cout << queue_array[FRONT_Position] << "  " << FRONT_Position++;
